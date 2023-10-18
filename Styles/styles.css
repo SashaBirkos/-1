@@ -6,7 +6,7 @@ html {
 *::after,
 *::before {
     box-sizing: inherit;
-    
+    margin: 0;
 }
 
 body {
@@ -36,6 +36,8 @@ li {
     margin: 0 auto;
 }
 
+
+
 .menu__btn {
     display: none;
     width: 22px;
@@ -59,6 +61,11 @@ header {
     margin-top: 37px;
     padding-bottom: 20px;
     border-bottom: 1px solid #fff;
+    background-color: transparent;
+    
+	top: 0;
+	left: 0;
+	right: 0;
 }
 
 .header__inner {
@@ -72,13 +79,126 @@ header {
     gap: 40px;
 }
 
-.menu__list-link {
-    
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
+.main {
+    /* background-image: url(../Images/background-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    min-height: 1080px;
+    padding-top: 100px; */
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding-top: 190px;
+}
+
+.title h1 {
+    font-size: 86px;
+    font-weight: 600;
+    margin: 0;
+    max-width: 760px;
+}
+
+.button a {
+    font-size: 32px;
+    font-weight: 700;
+    gap: 70px;
+
+    background-color: #3E41FF;
+    padding: 30px 98px;
+    display: flex;
+    display: inline-block;
+}
+
+.button a:hover {
+    background-color: #2A2DD4;
+}
+
+
+
+.aboutUs {
+    /* margin-top: 311px; */
+}
+
+.aboutUs__content {
+    background-color: #FFF;
+    padding: 100px 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.aboutUs__title {
+    text-align: center;
+}
+
+.aboutUs__title h2 {
+    color: #090D1E;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.aboutUs__text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.aboutUs__text p {
+    color: #000;
+    font-size: 24px;
+}
+
+.aboutUs__images {
+
+}
+
+.aboutUs__images img {
+max-width: 100%;
+max-height: 100%;
+}
+
+
+
+/* .industries {
+    margin-top: 100px;
+    display: flex;
+}
+
+.industries__title {
+    max-width: 790px;
+}
+
+.industries__title h2 {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.industries__content {
+    display: flex;
+}
+
+.industries__card   {
+
+} */
+
+
 
 footer {
     padding-top: 30px;
     padding-bottom: 30px;
+    margin-top: 100px;
 }
 
 .footer__inner {
@@ -111,6 +231,20 @@ footer {
 
     .menu__list {
         font-size: 18px;
+    }
+
+    .main__content {
+        padding-top: 170px;
+    }
+
+    .title h1 {
+        font-size: 55px;
+        max-width: 550px;
+    }
+
+    .button a {
+        font-size: 18px;
+        padding: 25px 80px;
     }
 
     footer {
@@ -164,9 +298,51 @@ footer {
         width: 117px;
         height: 30px;
     }
+
+    .main__content {
+        align-items: center;
+        padding-top: 150px;
+    }
+
+    .title h1 {
+        font-size: 40px;
+        text-align: center;
+        
+    }
+
+    .aboutUs__content {
+       
+        padding: 50px 20px;
+        gap: 30px;
+    }
 }
 
 @media (max-width: 558px) {
+    .main__content {
+        padding-top: 100px;
+        gap: 50px;
+    }
+
+    .button a {
+        font-size: 18px;
+        padding: 20px 98px;
+    }
+
+    .aboutUs__title h2 {
+        font-size: 32px;
+    }
+
+    .aboutUs__text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .aboutUs__text p {
+        color: #000;
+        font-size: 14px;
+    }
+
     .footer__inner {
         flex-direction: column;
     }
